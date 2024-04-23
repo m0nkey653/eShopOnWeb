@@ -13,7 +13,8 @@ Start application on Windows:
 
 Start application on Ubuntu:
 
-1. Select `Web` as startup application (default) -> Select `Web-Contrast-Ubuntu` as startup profile
+1. Install `dotnet-sdk-8.0` - [Install .NET SDK or .NET Runtime on Ubuntu](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2404)
+1. In a console, navigate to `eShopOnWeb/src/Web/`
 1. `dotnet run --launch-profile Web-Contrast-Ubuntu`
 
 ## Vulnerable Paths
