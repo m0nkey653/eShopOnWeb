@@ -1,0 +1,739 @@
+{
+    "version": 4,
+    "applicationName": "Web",
+    "events": [
+        {
+            "action": "CREATION",
+            "type": "PROPAGATION",
+            "time": 1713901594041,
+            "thread": "",
+            "target": "R",
+            "object": {
+                "tracked": false,
+                "hash": 61058004,
+                "value": "Microsoft.AspNetCore.Http.HttpRequest.Query@61058004",
+                "ranges": []
+            },
+            "args": [
+                {
+                    "tracked": false,
+                    "hash": 101994987,
+                    "value": "returnUrl",
+                    "ranges": []
+                }
+            ],
+            "ret": {
+                "tracked": true,
+                "hash": -995693598,
+                "value": "/",
+                "ranges": []
+            },
+            "stack": [
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task`1[TResult].TrySetResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task`1[TResult].TrySetResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1[TResult].SetResult()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.<ReadAsync>d__40.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecuteFromThreadPool()"
+                },
+                {
+                    "signature": "System.Threading.ThreadPoolWorkQueue.Dispatch()"
+                },
+                {
+                    "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerDoWork()"
+                },
+                {
+                    "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()"
+                },
+                {
+                    "signature": "System.Threading.Thread.StartHelper.RunWorker()"
+                },
+                {
+                    "signature": "System.Threading.Thread.StartHelper.Run()"
+                },
+                {
+                    "signature": "System.Threading.Thread.StartCallback()"
+                }
+            ],
+            "properties": [],
+            "summary": false,
+            "signature": {
+                "signature": "System.String Microsoft.AspNetCore.Http.HttpRequest.Query.get_Item(System.String)",
+                "returnType": "",
+                "className": "",
+                "methodName": "",
+                "argTypes": [],
+                "constructor": false,
+                "voidMethod": false,
+                "flags": 0
+            },
+            "taintRanges": [
+                {
+                    "tag": "UNTRUSTED",
+                    "range": "0:1"
+                },
+                {
+                    "tag": "CROSS_SITE",
+                    "range": "0:1"
+                }
+            ],
+            "objectId": 203,
+            "eventSources": [
+                {
+                    "sourceType": "PARAMETER",
+                    "sourceName": "returnUrl"
+                }
+            ],
+            "parentObjectIds": []
+        },
+        {
+            "action": "TRIGGER",
+            "type": "METHOD",
+            "time": 1713901594244,
+            "thread": "",
+            "source": "P0",
+            "object": {
+                "tracked": false,
+                "hash": 15346750,
+                "value": "Microsoft.AspNetCore.Mvc.RedirectResult@15346750",
+                "ranges": []
+            },
+            "args": [
+                {
+                    "tracked": true,
+                    "hash": -995693598,
+                    "value": "/",
+                    "ranges": []
+                },
+                {
+                    "tracked": false,
+                    "hash": 0,
+                    "value": "False",
+                    "ranges": []
+                },
+                {
+                    "tracked": false,
+                    "hash": 0,
+                    "value": "False",
+                    "ranges": []
+                }
+            ],
+            "ret": {
+                "tracked": false,
+                "hash": 0,
+                "value": "",
+                "ranges": []
+            },
+            "stack": [
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RedirectResult..ctor()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RedirectResult..ctor()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RedirectResult..ctor()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Redirect()"
+                },
+                {
+                    "signature": "Microsoft.eShopWeb.Web.Areas.Identity.Pages.Account.RegisterModel.<OnPostAsync>d__15.MoveNext(Register.cshtml.cs:91)"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start()"
+                },
+                {
+                    "signature": "Microsoft.eShopWeb.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync()"
+                },
+                {
+                    "signature": "unknown.lambda_method1473()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.<Execute>d__3.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.<InvokeHandlerMethodAsync>d__29.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.<InvokeNextPageFilterAsync>d__31.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.<InvokeNextPageFilterAsync>d__31.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.<InvokeNextPageFilterAwaitedAsync>d__32.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAwaitedAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.PageModel.<OnPageHandlerExecutionAsync>d__141.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.PageModel.OnPageHandlerExecutionAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerPageFilter.OnPageHandlerExecutionAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.<InvokeInnerFilterAsync>d__21.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResourceFilter()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<<InvokeAsync>g__Logged|17_1>d.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeAsync()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageRequestDelegateFactory.<>c__DisplayClass13_0.<CreateRequestDelegate>b__0()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.<Invoke>d__11.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.SetRoutingAndContinue()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Ardalis.ListStartupServices.ShowAllServicesMiddleware.<Invoke>d__3.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.<Invoke>d__14.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.<Invoke>d__14.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware.Invoke()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.Builder.UseExtensions.<>c__DisplayClass0_2.<Use>b__2()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task`1[TResult].TrySetResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunInternal()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task.RunContinuations()"
+                },
+                {
+                    "signature": "System.Threading.Tasks.Task`1[TResult].TrySetResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].SetExistingTaskResult()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1[TResult].SetResult()"
+                },
+                {
+                    "signature": "Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.<ReadAsync>d__40.MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()"
+                },
+                {
+                    "signature": "System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()"
+                },
+                {
+                    "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecuteFromThreadPool()"
+                },
+                {
+                    "signature": "System.Threading.ThreadPoolWorkQueue.Dispatch()"
+                },
+                {
+                    "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerDoWork()"
+                },
+                {
+                    "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()"
+                },
+                {
+                    "signature": "System.Threading.Thread.StartHelper.RunWorker()"
+                },
+                {
+                    "signature": "System.Threading.Thread.StartHelper.Run()"
+                },
+                {
+                    "signature": "System.Threading.Thread.StartCallback()"
+                }
+            ],
+            "properties": [],
+            "summary": false,
+            "signature": {
+                "signature": "void Microsoft.AspNetCore.Mvc.RedirectResult..ctor(System.String,System.Boolean,System.Boolean)",
+                "returnType": "",
+                "className": "",
+                "methodName": "",
+                "argTypes": [],
+                "constructor": false,
+                "voidMethod": false,
+                "flags": 0
+            },
+            "taintRanges": [
+                {
+                    "tag": "UNTRUSTED",
+                    "range": "0:1"
+                },
+                {
+                    "tag": "CROSS_SITE",
+                    "range": "0:1"
+                }
+            ],
+            "objectId": 274,
+            "eventSources": [],
+            "parentObjectIds": [
+                {
+                    "id": 203
+                }
+            ]
+        }
+    ],
+    "request": {
+        "parameters": {
+            "input.Password": [
+                "Test12!"
+            ],
+            "input.ConfirmPassword": [
+                "Test12!"
+            ],
+            "returnUrl": [
+                "/"
+            ],
+            "input.Email": [
+                "testasdf@test.com"
+            ],
+            "__RequestVerificationToken": [
+                "contrast-redacted-asp-net"
+            ]
+        },
+        "headers": {
+            "priority": [
+                "u=0, i"
+            ],
+            "accept-Encoding": [
+                "gzip, deflate, br, zstd"
+            ],
+            "sec-ch-ua-mobile": [
+                "?0"
+            ],
+            "host": [
+                "localhost:5001"
+            ],
+            "accept": [
+                "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+            ],
+            "origin": [
+                "https://localhost:5001"
+            ],
+            "sec-fetch-user": [
+                "?1"
+            ],
+            "upgrade-Insecure-Requests": [
+                "1"
+            ],
+            "accept-Language": [
+                "en-US,en;q=0.9"
+            ],
+            "user-Agent": [
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+            ],
+            "referer": [
+                "https://localhost:5001/Identity/Account/Register?returnUrl=%2F"
+            ],
+            "cookie": [
+                ".Nop.Culture=c%3Den-US%7Cuic%3Den-US; .Nop.Customer=f5235404-5a67-40cd-b5dc-830ad9eb45b2; .AspNetCore.Antiforgery.6gOW5Tc1UHk=CfDJ8Oj8cLBINAhCjs86UkUDodMr5aeLHk3Q5TPpnLfdFVJEiabWZ3GCJWUJ2PT_dLZl32260R9YVPmQQNjbB0R8GetmjU61J3oZY_1zZw3vSVlJPDuY0uy45fciW8WObNcK4QMdWp1M2v1XaVSroY7f21I; ASP.NET_SessionId=iyberd154hwllzb5jy5b05tc"
+            ],
+            "sec-ch-ua-platform": [
+                "\"Windows\""
+            ],
+            "content-Type": [
+                "application/x-www-form-urlencoded"
+            ],
+            "sec-fetch-site": [
+                "same-origin"
+            ],
+            "cache-Control": [
+                "max-age=0"
+            ],
+            "sec-fetch-dest": [
+                "document"
+            ],
+            "content-Length": [
+                "271"
+            ],
+            "sec-ch-ua": [
+                "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+            ],
+            "sec-fetch-mode": [
+                "navigate"
+            ]
+        },
+        "body": "contrast-redacted-body",
+        "method": "POST",
+        "port": 5001,
+        "protocol": "https",
+        "version": "2.0",
+        "uri": "/Identity/Account/Register",
+        "queryString": "returnUrl=%2F",
+        "standardNormalizedUri": "/Identity/Account/Register",
+        "contextPath": "/",
+        "serverVersionInfo": ""
+    },
+    "ruleId": "unvalidated-redirect",
+    "properties": {
+        "platform": "ASP.NET Core Razor Pages",
+        "route-signature": "Microsoft.eShopWeb.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync(System.String returnUrl)"
+    },
+    "routes": [
+        {
+            "signature": "Microsoft.eShopWeb.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync(System.String returnUrl)",
+            "observations": [
+                {
+                    "verb": "POST",
+                    "url": "/Identity/Account/Register"
+                }
+            ]
+        }
+    ],
+    "tags": "",
+    "hash": 1034320589568961872
+}

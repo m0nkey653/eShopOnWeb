@@ -20,6 +20,8 @@ Start application on Ubuntu:
 
 ### Unvalidated Redirect
 
+Vuln JSON: [unvalidated-redirect.json](./vulns/unvalidated-redirect.json)
+
 Discover:
 
 - https://localhost:5001/
