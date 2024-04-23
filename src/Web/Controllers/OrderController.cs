@@ -2,8 +2,10 @@
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
 using Microsoft.eShopWeb.Web.Features.MyOrders;
 using Microsoft.eShopWeb.Web.Features.OrderDetails;
+using Microsoft.eShopWeb.Web.ViewModels;
 
 namespace Microsoft.eShopWeb.Web.Controllers;
 
@@ -37,6 +39,28 @@ public class OrderController : Controller
         if (viewModel == null)
         {
             return BadRequest("No such order found for this user.");
+        }
+
+        return View(viewModel);
+    }
+
+    [HttpGet("term/{searchTerm}")]
+    public async Task<IActionResult> Search(string searchTerm)
+    {
+        Guard.Against.Null(User?.Identity?.Name, nameof(User.Identity.Name));
+
+        var viewModel = new SearchViewModel
+        {
+            SearchTerm = searchTerm
+        };
+
+        if (int.TryParse(searchTerm, out int searchOrderId))
+        {
+            var viewModelOrderDetails = await _mediator.Send(new GetOrderDetails(User.Identity.Name, searchOrderId));
+            if (viewModelOrderDetails != null)
+            {
+                viewModel.Orders = new List<OrderViewModel>() { viewModelOrderDetails };
+            }
         }
 
         return View(viewModel);

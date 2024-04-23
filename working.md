@@ -34,3 +34,52 @@ Discover:
 Exploit:
 
 - https://localhost:5001/Identity/Account/Register?returnUrl=http%3A%2F%2Fwww.google.com
+
+Fix:
+
+[Register.cshtml.cs](./src/Web/Areas/Identity/Pages/Account/Register.cshtml.cs)
+
+```csharp
+    public async Task<IActionResult> OnPostAsync(string? returnUrl = null)
+    {
+        returnUrl = returnUrl ?? Url.Content("~/");
+        if (ModelState.IsValid)
+        {
+            var user = new ApplicationUser { UserName = Input?.Email, Email = Input?.Email };
+            var result = await _userManager.CreateAsync(user, Input?.Password!);
+            if (result.Succeeded)
+            {
+...
+...
+                // Vulnerable: Redirect can go anywhere
+                // return Redirect(returnUrl);
+
+                // Safe: enforces a local redirect
+                return LocalRedirect(returnUrl);
+```
+
+### Reflected XSS
+
+Vuln JSON: [reflected-xss.json](./vulns/reflected-xss.json)
+
+Discover:
+
+- https://localhost:5001/order/search/term/invalidordernumber
+
+Exploit:
+
+- https://localhost:5001/order/search/term/test%3Cimg%20src%3Dx%20onerror%3Dalert(0)%3E 
+
+Fix:
+
+[Search.cshtml](./src/Web/Views/Order/Search.cshtml)
+
+```html
+    <p>
+        @* Vulnerable code below with Html.Raw *@
+        @* Could not find order for: "@Html.Raw(Model.SearchTerm)". *@
+        
+        @* Safe code below with default html encoding *@
+        Could not find order for: "@Model.SearchTerm".
+    </p>
+```
