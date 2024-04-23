@@ -44,6 +44,18 @@
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     },
+    "Web-Contrast-Ubuntu": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CORECLR_ENABLE_PROFILING": "1",
+        "CORECLR_PROFILER": "{8B2CE134-0948-48CA-A4B2-80DDAD9F5791}",
+        "CORECLR_PROFILER_PATH_64": "./bin/Debug/net8.0/contrast/runtimes/linux-x64/native/ContrastProfiler.so",
+        "CONTRAST_CONFIG_PATH": "contrast_security.yaml"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
     "Web": {
       "commandName": "Project",
       "launchBrowser": true,
