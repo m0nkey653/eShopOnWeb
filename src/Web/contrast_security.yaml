@@ -4,7 +4,6 @@
 #
 #================================================================================================================================================================================
 
-# Only set this property if you want to turn off Contrast. Set to `true` to turn the agent on; set to `false` to turn the agent off.
 enable: true
 
 #================================================================================
@@ -15,23 +14,19 @@ api:
 
   # ********************** REQUIRED **********************
   # Set the URL for the Contrast UI.
-  url: https://teamserver-staging-agents.contsec.com
+  url: http://www.contrast.com/Contrast
 
   # ********************** REQUIRED **********************
   # Set the API key needed to communicate with the Contrast UI.
-  api_key: bZ03m6T7x4OpLVQW2nFQH8KcIpV1kEuj
+  api_key: yoinks
 
   # ********************** REQUIRED **********************
   # Set the service key needed to communicate with the Contrast UI. It is used to calculate the Authorization header.
-  service_key: 60AUM9FB3XDLFVI8
+  service_key: yoinks
 
   # ********************** REQUIRED **********************
   # Set the user name used to communicate with the Contrast UI. It is used to calculate the Authorization header.
-  user_name: agent_381a3934-9232-485f-b520-8709ec64296d@ContrastDotnetAgentTeam
-
-  # Set the version of the TLS protocol the agent uses to communicate with the Contrast UI.
-  #  The .NET agent default behavior is (SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12).
-  # tls_versions: tls|tls11|tls12
+  user_name: yoinks
 
   #======================================================================================
   # Proxy
@@ -69,62 +64,11 @@ agent:
     # Set the the log output level. Valid options are `ERROR`, `WARN`, `INFO`, `DEBUG`, and `TRACE`.
     level: TRACE
 
-  #===========================================================================================================================================================
-  # Security_logger
-  # Define the following properties to set security logging values. If not defined, the agent uses the security logging (CEF) values from the Contrast UI.
-  #===========================================================================================================================================================
-  # security_logger:
-
-    # Set the log level for security logging. Value options are `OFF`, `FATAL`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`, and `ALL`. Set this property to `OFF` to disable security logging.
-    # level: NEEDS_TO_BE_SET
-
-    # Specify if connection should be encrypted or plaintext. Value options are `ENCRYPTED` or `UNENCRYPTED`.
-    # connection_type: NEEDS_TO_BE_SET
-
-    #====================================================================================================================================================
-    # Syslog
-    # Define the following properties to set Syslog values. If the properties are not defined, the agent uses the Syslog values from the Contrast UI.
-    #====================================================================================================================================================
-    # syslog:
-
-      # Set to `true` to enable Syslog logging.
-      # enable: NEEDS_TO_BE_SET
-
-      # Set the IP address of the Syslog server to which the agent should send messages.
-      # ip: NEEDS_TO_BE_SET
-
-      # Set the port of the Syslog server to which the agent should send messages.
-      # port: NEEDS_TO_BE_SET
-
-      # Set the facility code of the messages the agent sends to Syslog.
-      # facility: NEEDS_TO_BE_SET
-
-      # Set the log level of Exploited attacks. Value options are `ALERT`, `CRITICAL`, `ERROR`, `WARNING`, `NOTICE`, `INFO`, and `DEBUG`.
-      # severity_exploited: NEEDS_TO_BE_SET
-
-      # Set the log level of Blocked attacks. Value options are `ALERT`, `CRITICAL`, `ERROR`, `WARNING`, `NOTICE`, `INFO`, and `DEBUG`.
-      # severity_blocked: NEEDS_TO_BE_SET
-
-      # Set the log level of Probed attacks. Value options are `ALERT`, `CRITICAL`, `ERROR`, `WARNING`, `NOTICE`, `INFO`, and `DEBUG`.
-      # severity_probed: NEEDS_TO_BE_SET
-
   #==========================================================================
   # Dotnet
   # The following properties apply to any .NET agent-wide configurations.
   #==========================================================================
   dotnet:
-
-    # Set a list of application pool names that the agent does not instrument or analyze. Names must be formatted as a comma-separated list.
-    # app_pool_denylist: NEEDS_TO_BE_SET
-
-    # Set a list of application pool names that the agent instruments or analyzes. If set, other application pools are ignored. Allowlist takes precedence over denylist. Names must be formatted as a comma-separated list.
-    # app_pool_allowlist: NEEDS_TO_BE_SET
-
-    # Set a list of application names that the agent does not instrument or analyze. Names must be formatted as a comma-separated list.
-    # application_denylist: NEEDS_TO_BE_SET
-
-    # Set a list of application names that the agent instruments or analyzes. If set, other applications are ignored. Allowlist takes precedence over denylist. Names must be formatted as a comma-separated list.
-    # application_allowlist: NEEDS_TO_BE_SET
 
     # Enable a profiler chaining feature to allow Contrast to work alongside other tools that use the CLR Profiling API.
     enable_chaining: true
@@ -150,29 +94,6 @@ agent:
     # Allow propagation (dataflow) of .NET 'structs' (value types)
     enable_struct_dataflow: true
 
-    # Terminate the application if Contrast fails to initialize.
-    # This can be used to fail-fast when configuration or communication errors may prevent Contrast Protect from being enabled.
-    # The default is false, which will allow the application to continue, possibly without Contrast enabled.
-    # New after 20.7.4 and 1.5.12.
-    terminate_on_startup_error: false
-
-    # Enables HttpClient isolation using AppDomain remoting.
-    # This can be used to workaround .NET TLS version limitations at the cost of performace and stability.
-    # Enabled by default on applications targeting .NET Framwork < 4.7.0.
-    # New after .NET Framework v21.5.1.
-    enable_http_client_app_domain_isolation: true
-
-    # Controls the interval on the FileAnalysisJob. Setting a value will result in the job running at intervals, not just when the application loads. When set to -1, the job just runs once'.
-    # This key was added after 50.0.15 and 2.1.13
-    # file_analysis_time_ms: -1
-
-    # Controls the upper limits of model binding, processing will stop once any of these limits are reached
-    # New after 21.4.2 and 1.8.4
-    model_binding:
-      max_tree_depth: 5
-      max_source_count: 1000
-      max_error_count: 10
-
     # Section for settings NOT shared with customers and NOT publicly documented.
     # We assume no SLA with the stability of these options.
     secret:
@@ -184,8 +105,8 @@ agent:
     # This section MAY be shared with customers, but should NOT be public documented.
     # We assume no SLA with the stability of these options.
     debug:
-      log_method_sigs: false
-      log_modified_il: false
+      log_method_sigs: true
+      log_modified_il: true
       log_profiler_cache: false
       log_discovered_routes: true
       log_wrapped_tasks: false
@@ -195,18 +116,6 @@ agent:
         mode: ALL
         capture_stack_traces: true
         type_filter: Contrast.Sensors.Product.Protect.AttackBlockedException
-
-#===========================================================================
-# Inventory
-# Use the properties in this section to override the inventory features.
-#===========================================================================
-# inventory:
-
-  # Set to `false` to disable inventory features in the agent.
-  # enable: true
-
-  # Apply a list of labels to libraries. Labels must be foratted as a comma-delimited list. \n Example - label1, label2, label3
-  # tags: NEEDS_TO_BE_SET
 
 #==========================================================
 # Assess
@@ -220,253 +129,12 @@ assess:
   # Control the values captured by Assess vulnerability events. `Full` captures most values by calling ToString on objects, which can provide more info but causes increased memory usage. `Minimal` has better performance as it only captures String type objects as strings and uses type name for other object type values.
   event_detail: minimal
 
-  # Apply a list of labels to vulnerabilities and preflight messages. Labels must be formatted as a comma-delimited list. \n Example - label1, label2, label3
-  # tags: NEEDS_TO_BE_SET
-
-  # Value options are `ALL`, `SOME`, or `NONE`.
-  # stacktraces: ALL
-
   # detect potential security controls as "suggested security controls" in Contrast
   enable_control_detection: true
-
-  #===================================================================
-  # Sampling
-  # Use the following properties to control sampling in the agent.
-  #===================================================================
-  # sampling:
-
-    # Set to `false` to disable sampling.
-    # enable: true
-
-    # This property indicates how many requests to analyze in each window before sampling begins.
-    # baseline: 5
-
-    # This property indicates that every *nth* request after the baseline is analyzed.
-    # request_frequency: 10
-
-    # This property indicates the duration for which a sample set is valid.
-    # window_ms: 180_000
-
-  #========================================================================
-  # Rules
-  # Use the following properties to control simple rule configurations.
-  #========================================================================
-  # rules:
-
-  # Define a list of Assess rules to disable in the agent. The rules must be formatted as a comma-delimited list.
-  #  Example - Set "reflected-xss,sql-injection" to disable the reflected-xss rule and the sql-injection rule.
-  # disabled_rules: NEEDS_TO_BE_SET
 
 #=====================================================================
 # Protect
 # Use the properties in this section to override Protect features.
 #=====================================================================
 protect:
-
-  # Use the properties in this section to determine if the Protect feature should be enabled. If this property is not present, the decision is delegated to the Contrast UI.
-  enable: true
-
-  #====================================================================
-  # Rules
-  # Use the following properties to set simple rule configurations.
-  #====================================================================
-  rules:
-
-    # Define a list of Protect rules to disable in the agent. The rules must be formatted as a comma-delimited list.
-    # disabled_rules: NEEDS_TO_BE_SET
-
-    #================================================================================
-    # Bot-blocker
-    # Use the following properties to configure if and how the agent blocks bots.
-    #================================================================================
-    bot-blocker:
-
-      # Set to `true` for the agent to block known bots.
-      enable: false
-
-    #=====================================================================================================================================================
-    # Sql-injection
-    # Use the following properties to override a specific Protect rule. The key is the rule ID in the Contrast UI with dashes replaced by underscores.
-    #=====================================================================================================================================================
-    sql-injection:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or off.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      mode: monitor
-
-    #====================================================================================
-    # Sql-Injection Command Chaining Detection (Semantic Analysis)
-    # Use the following properties to configure how the rule works.
-    #====================================================================================
-    sql-injection-semantic-chaining:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, or off.
-      mode: monitor
-
-    #====================================================================================
-    # Sql-Injection Dangerous Function Detection (Semantic Analysis)
-    # Use the following properties to configure how the rule works.
-    #====================================================================================
-    sql-injection-semantic-dangerous-functions:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, or off.
-      mode: monitor
-
-    #====================================================================================
-    # Sql-Injection Suspicious Unions Detection (Semantic Analysis)
-    # Use the following properties to configure how the rule works.
-    #====================================================================================
-    sql-injection-semantic-suspicious-unions:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, or off.
-      mode: monitor
-
-    #====================================================================================
-    # Sql-Injection Tautology Detection (Semantic Analysis)
-    # Use the following properties to configure how the rule works.
-    #====================================================================================
-    sql-injection-semantic-tautologies:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, or off.
-      mode: monitor
-
-    #====================================================================================
-    # Cmd-injection
-    # Use the following properties to configure how the command injection rule works.
-    #====================================================================================
-    cmd-injection:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or `off`.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      mode: monitor
-
-    #====================================================================================
-    # Cmd-injection Semantic Chained Commands
-    # Use the following properties to configure how the command injection rule works.
-    #====================================================================================
-    cmd-injection-semantic-chained-commands:
-      # Set the mode of the rule. Value options are `monitor`, `block`, or `off`.
-      mode: monitor
-
-    #====================================================================================
-    # Cmd-injection Semantic Dangerous Paths
-    # Use the following properties to configure how the command injection rule works.
-    #====================================================================================
-    cmd-injection-semantic-dangerous-paths:
-      # Set the mode of the rule. Value options are `monitor`, `block`, or `off`.
-      mode: monitor
-
-    #====================================================================================
-    # Cmd-injection Command Backdoors
-    # Use the following properties to configure how the command injection rule works.
-    #====================================================================================
-    cmd-injection-command-backdoors:
-      # Set the mode of the rule. Value options are `monitor`, `block`, or `off`.
-      mode: monitor
-
-    #=================================================================================
-    # Path-traversal
-    # Use the following properties to configure how the path traversal rule works.
-    #=================================================================================
-    path-traversal:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or `off`.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      mode: monitor
-
-    #====================================================================================
-    # Path Traversal Semantic File Security Bypass
-    # Use the following properties to configure how the command injection rule works.
-    #====================================================================================
-    path-traversal-semantic-file-security-bypass:
-      # Set the mode of the rule. Value options are `monitor`, `block`, or `off`.
-      mode: monitor
-
-    #===================================================================================
-    # Method-tampering
-    # Use the following properties to configure how the method tampering rule works.
-    #===================================================================================
-    # method-tampering:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or `off`.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      # mode: monitor
-
-    #=================================================================================================
-    # Reflected-xss
-    # Use the following properties to configure how the reflected cross-site scripting rule works.
-    #=================================================================================================
-    reflected-xss:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or `off`.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      mode: monitor
-
-    #=================================================================================
-    # Xxe
-    # Use the following properties to configure how the XML external entity works.
-    #=================================================================================
-    xxe:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or `off`.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      mode: monitor
-
-    #=================================================================================
-    # Unsafe File Upload
-    # Use the following properties to configure how the Unsafe File Upload rule works.
-    #=================================================================================
-    unsafe-file-upload:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or `off`.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      mode: monitor
-
-    #=================================================================================
-    # Csrf
-    # Use the following properties to configure how the Csrf rule works.
-    #=================================================================================
-    # csrf:
-
-      # Set the mode of the rule. Value options are `monitor`, `block`, `block_at_perimeter`, or `off`.
-      #  Note - If a setting says, "if blocking is enabled", the setting can be `block` or `block_at_perimeter`.
-      # mode: off
-
-#==================================================================================
-# Application
-# Use the properties in this section for the application(s) hosting this agent.
-#==================================================================================
-# application:
-
-  # Add the name of the application group with which this application should be associated in the Contrast UI.
-  # group: NEEDS_TO_BE_SET
-
-  # Add the application code this application should use in the Contrast UI.
-  # code: NEEDS_TO_BE_SET
-
-  # Override the reported application version.
-  # version: NEEDS_TO_BE_SET
-
-  # Apply labels to an application. Labels must be formatted as a comma-delimited list.
-  #  Example - label1,label2,label3
-  # tags: NEEDS_TO_BE_SET
-
-  # Define a set of key=value pairs (which conforms to RFC 2253) for specifying user-defined metadata associated with the application. The set must be formatted as a comma-delimited list of `key=value` pairs.
-  #  Example - "business-unit=accounting, office=Baltimore"
-  # metadata: NEEDS_TO_BE_SET
-
-#==========================================================================================
-# Server
-# Use the properties in this section to set metadata For the server hosting this agent.
-#==========================================================================================
-# server:
-
-  # Override the reported server name.
-  # name: test-server-1
-
-  # Override the reported server environment.
-  # environment: development
-
-  # Apply a list of labels to the server. Labels must be formatted as a comma-delimited list.
-  #  Example - label1,label2,label3
-  # tags: NEEDS_TO_BE_SET
+  enable: false
