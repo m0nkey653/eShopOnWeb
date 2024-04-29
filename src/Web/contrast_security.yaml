@@ -1,0 +1,140 @@
+﻿#================================================================================================================================================================================
+#
+#  Use the properties in this YAML file to configure a Contrast agent. Go to https://docs.contrastsecurity.com/ to determine the order of precedence for configuration values.
+#
+#================================================================================================================================================================================
+
+enable: true
+
+#================================================================================
+# Contrast
+# Use the properties in this section to connect the agent to the Contrast UI.
+#================================================================================
+api:
+
+  # ********************** REQUIRED **********************
+  # Set the URL for the Contrast UI.
+  url: http://www.contrast.com/Contrast
+
+  # ********************** REQUIRED **********************
+  # Set the API key needed to communicate with the Contrast UI.
+  api_key: yoinks
+
+  # ********************** REQUIRED **********************
+  # Set the service key needed to communicate with the Contrast UI. It is used to calculate the Authorization header.
+  service_key: yoinks
+
+  # ********************** REQUIRED **********************
+  # Set the user name used to communicate with the Contrast UI. It is used to calculate the Authorization header.
+  user_name: yoinks
+
+  #======================================================================================
+  # Proxy
+  # Use the following properties for communication with the Contrast UI over a proxy.
+  #======================================================================================
+  proxy:
+
+    # Add a property value to determine if the agent should communicate with the Contrast UI over a proxy. If a property value is not present, the presence of a valid proxy host and port determines enabled status.
+    enable: false
+
+    # Set this property as an alternate for `scheme://host:port`. It takes precedence over the other settings, if specified; however, an error will be thrown if both the URL and individual properties are set.
+    url: http://localhost:8888
+
+    # Set the proxy user.
+    # user: NEEDS_TO_BE_SET
+
+    # Set the proxy password.
+    # pass: NEEDS_TO_BE_SET
+
+    # Set the proxy authentication type. Value options are `NTLM`, `Digest`, and `Basic`.
+    # auth_type: NEEDS_TO_BE_SET
+
+#=======================================================================================================================================
+# Agent
+# Use the properties in this section to control the way and frequency with which the agent communicates to logs and the Contrast UI.
+#=======================================================================================================================================
+agent:
+
+  #================================================================================================================================================================
+  # Logger
+  # Define the following properties to set logging values. If the following properties are not defined, the agent uses the logging values from the Contrast UI.
+  #================================================================================================================================================================
+  logger:
+
+    # Set the the log output level. Valid options are `ERROR`, `WARN`, `INFO`, `DEBUG`, and `TRACE`.
+    level: TRACE
+
+  #==========================================================================
+  # Dotnet
+  # The following properties apply to any .NET agent-wide configurations.
+  #==========================================================================
+  dotnet:
+
+    # Enable a profiler chaining feature to allow Contrast to work alongside other tools that use the CLR Profiling API.
+    enable_chaining: true
+
+    # Indicate that the agent should produce a report that summarizes application hosting on the server (e.g., CLR versions, bitness or pipeline modes).
+    enable_dvnr: false
+
+    # Indicate that the agent should allow CLR optimizations of JIT-compiled methods.
+    enable_instrumentation_optimizations: true
+
+    # Indicate that the agent should allow the CLR to inline methods that are not instrumented by Contrast.
+    enable_jit_inlining: true
+
+    # Indicate that the agent should allow the CLR to perform transparency checks under full trust
+    enable_transparency_checks: false
+
+    # Responses for request paths (e.g., HttpRequest.Path) that match this regex are not analyzed.
+    web_module_allowlist: WebResource.axd
+
+    # Workaround restoring error handling occuring after sending headers behavor that some applications depend upon.
+    restore_error_handling_after_sending_headers_behavior: false
+
+    # Allow propagation (dataflow) of .NET 'structs' (value types)
+    enable_struct_dataflow: true
+
+    # Section for settings NOT shared with customers and NOT publicly documented.
+    # We assume no SLA with the stability of these options.
+    secret:
+      should_connect: false
+      testing_finding_results: true
+
+      debug_delegate_workaround: false
+
+    # This section MAY be shared with customers, but should NOT be public documented.
+    # We assume no SLA with the stability of these options.
+    debug:
+      log_method_sigs: true
+      log_modified_il: true
+      log_profiler_cache: false
+      log_discovered_routes: true
+      log_wrapped_tasks: false
+
+      # Controls the capture and logging of Exceptions in the Profiler logs (default OFF/disabled)
+      exception_logging:
+        mode: ALL
+        capture_stack_traces: true
+        type_filter: Contrast.Sensors.Product.Protect.AttackBlockedException
+
+#==========================================================
+# Assess
+# Use the properties in this section to control Assess.
+#==========================================================
+assess:
+
+  # Include this property to determine if the Assess feature should be enabled. If this property is not present, the decision is delegated to the Contrast UI.
+  enable: true
+
+  # Control the values captured by Assess vulnerability events. `Full` captures most values by calling ToString on objects, which can provide more info but causes increased memory usage. `Minimal` has better performance as it only captures String type objects as strings and uses type name for other object type values.
+  event_detail: minimal
+
+  # detect potential security controls as "suggested security controls" in Contrast
+  enable_control_detection: true
+
+#=====================================================================
+# Protect
+# Use the properties in this section to override Protect features.
+#=====================================================================
+protect:
+  enable: false

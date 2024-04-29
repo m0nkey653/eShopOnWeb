@@ -1,0 +1,2457 @@
+[
+    {
+        "action": "CREATION",
+        "type": 0,
+        "time": 1713913304226,
+        "thread": "",
+        "source": null,
+        "target": "P0",
+        "object": {
+            "tracked": false,
+            "hash": 0,
+            "value": "Success 'x'",
+            "ranges": []
+        },
+        "args": [
+            {
+                "tracked": true,
+                "hash": 831342361,
+                "value": "x",
+                "ranges": []
+            },
+            {
+                "tracked": false,
+                "hash": 0,
+                "value": "True",
+                "ranges": []
+            }
+        ],
+        "ret": {
+            "tracked": false,
+            "hash": 0,
+            "value": "",
+            "ranges": []
+        },
+        "stack": [
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult..ctor()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult.Success()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder.CheckModel()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder.BindModelAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.<BindModelAsync>d__8.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1[TResult].Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<CreateBinderDelegate>g__Bind|0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.BindArgumentsAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResourceFilter()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<<InvokeAsync>g__Logged|17_1>d.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.<Invoke>d__11.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.SetRoutingAndContinue()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Ardalis.ListStartupServices.ShowAllServicesMiddleware.<Invoke>d__3.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.<Invoke>d__14.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.<Invoke>d__14.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.<InvokeAsync>d__6.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.WebTools.BrowserLink.Net.VsContentMiddleware.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.<InvokeAsync>d__4.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.UseExtensions.<>c__DisplayClass0_2.<Use>b__2()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.UseExtensions.<>c__DisplayClass0_1.<Use>b__1()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Hosting.HostingApplication.ProcessRequestAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<ProcessRequests>d__238`1[TContext].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.IO.Pipelines.StreamPipeReader.<<ReadInternalAsync>g__Core|40_0>d.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Net.Security.SslStream.<ReadAsyncInternal>d__163`1[TIOAdapter].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Net.Security.SslStream.<EnsureFullTlsFrameAsync>d__161`1[TIOAdapter].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.<ReadAsyncInternal>d__27.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].System.Threading.IThreadPoolWorkItem.Execute()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPoolWorkQueue.Dispatch()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerDoWork()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Thread.StartHelper.RunWorker()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Thread.StartHelper.Run()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Thread.StartCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            }
+        ],
+        "fieldName": null,
+        "context": null,
+        "code": null,
+        "properties": [],
+        "summary": false,
+        "bitset": null,
+        "signature": {
+            "signature": "void Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult..ctor(System.Object,System.Boolean)",
+            "returnType": "",
+            "className": "",
+            "methodName": "",
+            "argTypes": [],
+            "constructor": false,
+            "voidMethod": false,
+            "flags": 0,
+            "expressionType": null,
+            "operator": null
+        },
+        "taintRanges": [],
+        "objectId": 400,
+        "eventSources": [
+            {
+                "sourceType": "BODY",
+                "sourceName": ""
+            }
+        ],
+        "parentObjectIds": []
+    },
+    {
+        "action": "TRIGGER",
+        "type": 3,
+        "time": 1713913304284,
+        "thread": "",
+        "source": "P0",
+        "target": null,
+        "object": {
+            "tracked": false,
+            "hash": 19950264,
+            "value": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.PagedBufferedTextWriter@19950264",
+            "ranges": []
+        },
+        "args": [
+            {
+                "tracked": true,
+                "hash": 831342361,
+                "value": "x",
+                "ranges": []
+            }
+        ],
+        "ret": {
+            "tracked": false,
+            "hash": 0,
+            "value": "",
+            "ranges": []
+        },
+        "stack": [
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.PagedBufferedTextWriter.Write()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Html.HtmlString.WriteTo()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBuffer.<WriteToAsync>d__23.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBuffer.WriteToAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__22.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__18.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.<ExecuteAsync>d__7.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResourceFilter()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<<InvokeAsync>g__Logged|17_1>d.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.<Invoke>d__11.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.SetRoutingAndContinue()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Ardalis.ListStartupServices.ShowAllServicesMiddleware.<Invoke>d__3.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.<Invoke>d__14.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.<Invoke>d__14.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.<InvokeAsync>d__6.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.WebTools.BrowserLink.Net.VsContentMiddleware.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.<InvokeAsync>d__4.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.UseExtensions.<>c__DisplayClass0_2.<Use>b__2()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Builder.UseExtensions.<>c__DisplayClass0_1.<Use>b__1()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Hosting.HostingApplication.ProcessRequestAsync()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<ProcessRequests>d__238`1[TContext].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.IO.Pipelines.StreamPipeReader.<<ReadInternalAsync>g__Core|40_0>d.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Net.Security.SslStream.<ReadAsyncInternal>d__163`1[TIOAdapter].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Net.Security.SslStream.<EnsureFullTlsFrameAsync>d__161`1[TIOAdapter].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPool.<>c.<.cctor>b__61_0()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SignalCompletion()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1[TResult].SetResult()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.<ReadAsyncInternal>d__27.MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].ExecutionContextCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ExecutionContext.RunInternal()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].MoveNext()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1[TResult,TStateMachine].System.Threading.IThreadPoolWorkItem.Execute()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.ThreadPoolWorkQueue.Dispatch()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerDoWork()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Thread.StartHelper.RunWorker()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Thread.StartHelper.Run()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            },
+            {
+                "signature": "System.Threading.Thread.StartCallback()",
+                "method": null,
+                "file": null,
+                "lineNumber": null,
+                "type": null,
+                "eval": null
+            }
+        ],
+        "fieldName": null,
+        "context": null,
+        "code": null,
+        "properties": [],
+        "summary": false,
+        "bitset": null,
+        "signature": {
+            "signature": "void Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.PagedBufferedTextWriter.Write(System.String)",
+            "returnType": "",
+            "className": "",
+            "methodName": "",
+            "argTypes": [],
+            "constructor": false,
+            "voidMethod": false,
+            "flags": 0,
+            "expressionType": null,
+            "operator": null
+        },
+        "taintRanges": [],
+        "objectId": 402,
+        "eventSources": [],
+        "parentObjectIds": [
+            {
+                "id": 400
+            }
+        ]
+    }
+]
